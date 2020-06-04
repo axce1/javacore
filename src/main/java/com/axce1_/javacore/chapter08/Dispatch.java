@@ -27,10 +27,10 @@ public class Dispatch {
         r = a;
         r.callme();
 
-        r = b;
+//        r = b;
         r.callme();
 
-        r = c;
+//        r = c;
         r.callme();
     }
 }

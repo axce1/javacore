@@ -1,0 +1,12 @@
+Task 1
+SELECT firstname, lastname, city, state FROM address LEFT JOIN person ON address.personid = person.personid;
+Task 2
+SELECT Max(salary) FROM employee where salary Not IN (select max(salary) from employee);
+Task 3
+SELECT employee.name FROM Employee AS employee JOIN Employee AS manager ON employee.ManagerId = manager.Id where employee.salary > manager.salary;
+Task 4
+select email from person GROUP BY email HAVING count(email) >= 2;
+Task 5
+select name from customers WHERE id not in (SELECT id from orders);
+Task 6
+select class from courses GROUP BY class HAVING count(class) >= 5;

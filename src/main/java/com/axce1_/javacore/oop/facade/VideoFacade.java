@@ -14,7 +14,7 @@ public class VideoFacade {
         }
         VideoFile buffer = BitrateReader.read(file, sourceCodec);
         VideoFile intermediateResult = BitrateReader.convert(buffer, destinationCodec);
-        result = (new AudioMixer()).fix(intermediateResult);
+        //result = (new AudioMixer()).fix(intermediateResult);
         System.out.println("VideoConversionFacade: conversion completed.");
     }
 }
